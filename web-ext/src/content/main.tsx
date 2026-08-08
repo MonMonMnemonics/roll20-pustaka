@@ -3,8 +3,15 @@ import './index.css'
 let chatBtn: HTMLButtonElement | undefined;
 let chatInput: HTMLTextAreaElement | undefined;
 let chatBox: HTMLDivElement | undefined;
+let socket: WebSocket | undefined;
+let heartbeatInterval: number | undefined;
+
+let gameId: string = '';
 const ChatBoxObserver: MutationObserver = new MutationObserver(chatBoxChange);
 const processedMsgId: string[] = [];
+
+const serverHostname = 'http://localhost:3000/api';
+const wsHostname = 'ws://localhost:3000/api/nexus';
 
 console.log('ROLL20 PUSTAKA LOADED!')
 
@@ -17,6 +24,7 @@ chrome.runtime.onMessage.addListener((message) => {
 });
 
 async function load() {
+    try {
     chatBtn = document.querySelector('#chatSendBtn') as HTMLButtonElement;
     chatInput = document.querySelector('#textchat-input > textarea') as HTMLTextAreaElement;
     chatBox = document.querySelector('#textchat > div.content') as HTMLDivElement;
@@ -30,6 +38,55 @@ async function load() {
         activeNotif.remove();
     }
 
+    gameId = '';
+    for (const child of chatBox.children)  {
+        if (child.classList.contains('message') && child.classList.contains('system')) {
+            const joinLinkEle = child.querySelector('div.userscript-sharelink > a') as HTMLLinkElement | null;
+            if (joinLinkEle) {
+                if (joinLinkEle.href.startsWith('https://app.roll20.net/join/')) {
+                    gameId = joinLinkEle.href.slice('https://app.roll20.net/join/'.length);
+                    if (gameId.indexOf('/') != -1) {
+                        gameId = gameId.slice(0, gameId.indexOf('/'));
+                        
+                    }
+                    break;
+                }
+            }
+        }
+    }
+
+    if (gameId == '') {
+        return;
+    }
+
+    //-------------------------- CONNECT TO WS --------------------------
+    if (socket) {
+        socket.close();
+    }
+
+    socket = new WebSocket(wsHostname + "/" + gameId);
+
+    socket.onopen = () => {
+        startHeartbeat();
+    };
+
+    socket.onclose = () => {
+        stopHeartbeat();
+        activeNotif.textContent = "🔴 PUSTAKA";
+    };
+
+    socket.onmessage = (event) => {
+        const data = JSON.parse(event.data);
+        incomingMessageNexus(data.flag, data.data ?? undefined)
+    };
+
+    socket.onerror = () => {
+        if (socket) {
+            socket.close();
+        }        
+    };
+    console.log('TEST');
+
     ChatBoxObserver.disconnect();
     ChatBoxObserver.observe(chatBox, { childList: true, subtree: true });
 
@@ -39,6 +96,23 @@ async function load() {
     activeNotif.textContent = "🟢 PUSTAKA";
 
     chatBtn.parentElement?.appendChild(activeNotif)
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+function startHeartbeat() {
+    heartbeatInterval = setInterval(() => {
+        if (socket && socket.readyState === WebSocket.OPEN) {
+            socket.send(JSON.stringify({ flag: "ping" }));
+        }
+    }, 10000);
+}
+
+function stopHeartbeat() {
+    if (heartbeatInterval) {
+        clearInterval(heartbeatInterval);
+    }
 }
 
 async function chatBoxChange(mutationList: MutationRecord[], _observer: MutationObserver) {
@@ -81,20 +155,46 @@ async function chatBoxChange(mutationList: MutationRecord[], _observer: Mutation
     }
 }
 
-async function messageNexus(_author: string, text: string, msgId: string) {
+async function messageNexus(author: string, text: string, msgId: string) {
     if (chatInput && chatBtn) {
         if (processedMsgId.includes(msgId)) {
             return;
         }
 
-        if(text == '#ping') {
+        if (text.toLowerCase() == '#ping') {
             processedMsgId.push(msgId);
             if (processedMsgId.length > 100) {
                 processedMsgId.shift();
             }
 
-            chatInput.value = "Pong!";
+            chatInput.value = "/desc Pong!";
             chatBtn.click();
+        } if (text.toLowerCase() == '#hello') {
+            processedMsgId.push(msgId);
+            if (processedMsgId.length > 100) {
+                processedMsgId.shift();
+            }
+            
+            if (socket) {
+                socket.send(JSON.stringify({
+                    flag: 'HELLO',
+                    data: author
+                }));
+            }
         }
     }    
+}
+
+async function incomingMessageNexus(flag: string, data: any | undefined) {
+    if (flag == "TEXT-MSG") {
+        if (socket && chatInput && chatBtn) {
+            chatInput.value = "/desc " + data;
+            chatBtn.click();
+        }
+    } else if (flag == "TEXT-LIST") {
+        if (socket && chatInput && chatBtn) {
+            chatInput.value = (data as string[]).map(text => "/desc " + text).join('\n');
+            chatBtn.click();
+        }
+    }
 }

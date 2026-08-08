@@ -5,3 +5,18 @@ export const game = sqliteTable("game", {
   gameId: text("game_id").notNull().unique(),
   time: integer("time").notNull().default(0),
 });
+
+export const effect = sqliteTable("effect", {
+  id: integer("id").primaryKey(),
+  gameId: text("game_id").notNull().unique(),
+  expire: integer("expire").notNull().default(0),
+  desc: text("desc"),
+});
+
+export const item = sqliteTable("effect", {
+  id: integer("id").primaryKey(),
+  gameId: text("game_id").notNull().unique(),
+  expire: integer("expire").notNull().default(0),
+  qty: integer("qty").notNull().default(0),
+  desc: text("desc"),
+});

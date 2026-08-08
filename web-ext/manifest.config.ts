@@ -17,6 +17,10 @@ export default defineManifest({
   permissions: [
     'contentSettings',
   ],
+  "host_permissions": [
+    "http://localhost:*/*",
+    "ws://localhost:*/*",
+  ],
   content_scripts: [{
     js: ['src/content/main.tsx'],
     matches: ['https://app.roll20.net/editor/*'],
