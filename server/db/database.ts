@@ -1,4 +1,4 @@
-import { createClient } from '@libsql/client';
+import { createClient } from "@libsql/client";
 import { drizzle } from "drizzle-orm/libsql";
 
 const client = createClient({ url: "file:" + Deno.env.get("DB_FILE") });
