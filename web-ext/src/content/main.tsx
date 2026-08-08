@@ -10,21 +10,20 @@ let gameId: string = '';
 const ChatBoxObserver: MutationObserver = new MutationObserver(chatBoxChange);
 const processedMsgId: string[] = [];
 
-const serverHostname = 'http://localhost:3000/api';
-const wsHostname = 'ws://localhost:3000/api/nexus';
+const serverHostname = import.meta.env.VITE_API_URL;
+const wsHostname = import.meta.env.VITE_WS_URL;
 
 console.log('ROLL20 PUSTAKA LOADED!')
 
-chrome.runtime.onMessage.addListener((message) => {
+chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
     if (message.flag === "start") {
-        load();
+        load(sendResponse);
     }
 
     return true; 
 });
 
-async function load() {
-    try {
+async function load(sendResponse: (response: any) => void) {
     chatBtn = document.querySelector('#chatSendBtn') as HTMLButtonElement;
     chatInput = document.querySelector('#textchat-input > textarea') as HTMLTextAreaElement;
     chatBox = document.querySelector('#textchat > div.content') as HTMLDivElement;
@@ -59,7 +58,10 @@ async function load() {
         return;
     }
 
+    sendResponse({ gameId: gameId });
+
     //-------------------------- CONNECT TO WS --------------------------
+    /*
     if (socket) {
         socket.close();
     }
@@ -85,10 +87,10 @@ async function load() {
             socket.close();
         }        
     };
-    console.log('TEST');
 
     ChatBoxObserver.disconnect();
     ChatBoxObserver.observe(chatBox, { childList: true, subtree: true });
+    */
 
     activeNotif = document.createElement('div');
     activeNotif.id = 'roll20ActiveNotif';
@@ -96,9 +98,6 @@ async function load() {
     activeNotif.textContent = "🟢 PUSTAKA";
 
     chatBtn.parentElement?.appendChild(activeNotif)
-    } catch (error) {
-        console.log(error);
-    }
 }
 
 function startHeartbeat() {

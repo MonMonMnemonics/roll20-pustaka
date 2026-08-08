@@ -58,6 +58,11 @@ h1 {
   flex-direction: column;
 }
 
+.set-time-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .title {
   font-size: 2em;
   font-weight: bold;
@@ -108,4 +113,9 @@ h1 {
 .btn-primary:focus-visible {
   outline: 2px solid #a5b4fc;
   outline-offset: 3px;
+}
+
+#time-input {
+  margin: 2px 12px;
+  font-size: 2em;
 }

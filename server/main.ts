@@ -1,6 +1,5 @@
 import { App, cors, staticFiles } from "fresh";
 import { type State } from "./utils.ts";
-import { clients } from "@/db/database.ts";
 
 export const app = new App<State>();
 
@@ -17,7 +16,3 @@ console.log(
 		? "PRODUCTION"
 		: "DEVELOPMENT"),
 );
-
-setInterval(() => {
-	console.log(clients.size);
-}, 3000);
