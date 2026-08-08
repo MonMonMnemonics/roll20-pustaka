@@ -53,14 +53,17 @@ h1 {
 }
 
 .container {
-  padding: 3px;
+  padding: 3px 12px;
+  gap: 12px;
   display: flex;
   flex-direction: column;
 }
 
 .set-time-container {
+  gap: 12px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .title {
@@ -94,7 +97,6 @@ h1 {
   transition: all 0.2s ease-in-out;
   box-shadow: 0 4px 14px 0 var(--btn-shadow);
   outline: none;
-  margin: 12px;
   text-wrap-mode: nowrap;
 }
 
@@ -111,6 +113,38 @@ h1 {
 }
 
 .btn-primary:focus-visible {
+  outline: 2px solid #a5b4fc;
+  outline-offset: 3px;
+}
+
+.btn-secondary {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  font-size: 0.95rem;
+  font-weight: bold;
+  padding: 4px 7px;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 14px 0 var(--btn-shadow);
+  outline: none;
+  text-wrap-mode: nowrap;
+}
+
+.btn-secondary:hover {
+  background-color: var(--btn-bg-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px 0 var(--btn-shadow);
+}
+
+.btn-secondary:active {
+  background-color: var(--btn-bg-active);
+  transform: translateY(0);
+  box-shadow: 0 2px 8px 0 var(--btn-shadow);
+}
+
+.btn-secondary:focus-visible {
   outline: 2px solid #a5b4fc;
   outline-offset: 3px;
 }

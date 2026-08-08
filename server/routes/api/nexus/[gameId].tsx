@@ -1,5 +1,7 @@
-import { clients } from "@/db/database.ts";
+import { clients, db, intToTimeString } from "@/db/database.ts";
 import { define } from "../../../utils.ts";
+import { game } from "@/db/schema.ts";
+import { eq } from "drizzle-orm";
 
 export const handler = define.handlers({
   GET(ctx) {
@@ -14,7 +16,7 @@ export const handler = define.handlers({
 
     socket.onmessage = (event) => {
         const data = JSON.parse(event.data);
-        messageNexus(data.flag, data.data ?? undefined, socket);
+        messageNexus(data.flag, data.data ?? undefined, gameId, socket);
     };
 
     socket.onclose = () => {
@@ -30,7 +32,7 @@ export const handler = define.handlers({
   },
 });
 
-async function messageNexus(flag: string, data: any, socket: WebSocket) {
+async function messageNexus(flag: string, data: any, gameId:string, socket: WebSocket) {
     switch (flag) {
         case "HELLO":
             socket.send(JSON.stringify({
@@ -38,6 +40,21 @@ async function messageNexus(flag: string, data: any, socket: WebSocket) {
                 data: "Hello back " + data + "!"
             }));
             break;
+
+        case "TIME-NOW": {
+            const result = await db.select({ time: game.time })
+                .from(game)
+                .where(eq(game.gameId, gameId))
+                .limit(1);
+
+            const timeNow = ((result.length > 0) ? result[0].time : 0);
+
+            socket.send(JSON.stringify({
+                flag: "TEXT-MSG",
+                data: "TIME: " + intToTimeString(timeNow)
+            }));
+            break;
+        }
     
         default:
             break;

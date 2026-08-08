@@ -8,7 +8,7 @@ export const handler = define.handlers({
         const gameId = ((new URL(ctx.req.url)).searchParams.get("gameid") ?? '');
 
         if (gameId == '') {
-            return new Response('0', {
+            return new Response(intToTimeString(0), {
                 status: 200,
             });
         }
@@ -19,12 +19,12 @@ export const handler = define.handlers({
             .limit(1);
 
         if (result.length == 0) {
-            return new Response('0', {
+            return new Response(intToTimeString(0), {
                 status: 200,
             });
         }
 
-        return new Response(result[0].time.toString(), {
+        return new Response(intToTimeString(result[0].time), {
             status: 200,
         });
     },
@@ -46,17 +46,32 @@ export const handler = define.handlers({
                 for (const socket of clients) {
                     socket.send(JSON.stringify({
                         flag: "TEXT-MSG",
-                        data: intToTimeString(payload.value)
+                        data: "TIME: " + intToTimeString(payload.value)
                     }));
                 }
                 break;
             }
 
             case 'SHIFT': {
+                const result = await db.select({ time: game.time })
+                    .from(game)
+                    .where(eq(game.gameId, payload.gameId))
+                    .limit(1);
+
+                const timeNew = ((result.length > 0) ? result[0].time : 0) + payload.value;
+                await db.insert(game)
+                    .values({ gameId: payload.gameId, time: timeNew })
+                    .onConflictDoUpdate({
+                        target: game.gameId,
+                        set: { 
+                            time: timeNew,
+                        }
+                    });
+
                 for (const socket of clients) {
                     socket.send(JSON.stringify({
                         flag: "TEXT-MSG",
-                        data: intToTimeString(payload.value)
+                        data: "TIME: " + intToTimeString(timeNew)
                     }));
                 }
                 break;

@@ -4,7 +4,7 @@
     "check": "deno fmt --check . && deno lint . && deno check",
     "dev": "vite",
     "build": "vite build",
-    "start": "deno serve -A --port=3000 _fresh/server.js",
+    "start": "deno serve --port=3000 --env-file -A _fresh/server.js",
     "update": "deno run -A -r jsr:@fresh/update .",
     "db:generate": "deno run -A npm:drizzle-kit generate",
     "db:migrate": "deno run -A --node-modules-dir=auto --env-file npm:drizzle-kit migrate"

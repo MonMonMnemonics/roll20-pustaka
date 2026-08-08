@@ -36,8 +36,25 @@ export default function Popup() {
         });
 
         const time = await timeRes.text();
-        setCurrTime(intToTimeString(Number(time)));
-        setOldTime(intToTimeString(Number(time)));
+        setCurrTime(time);
+        setOldTime(time);
+    }
+
+    async function shiftTimeBy(value: number) {
+        await sendTimeMsg(gameId, 'SHIFT', value);
+        let newTime = oldTime.split(':').reduce((acc, val, idx) => acc + Number(val) * Math.pow(60, 1 - idx), 0) + value;
+        if (newTime > 24*60) {
+            while (newTime >= 24*60) {
+                newTime -= 24*60;
+            }
+        } else if (newTime < 0) {
+            while (newTime < 0) {
+                newTime = 24*60 - newTime;
+            }
+        }
+        
+        setCurrTime(intToTimeString(newTime));
+        setOldTime(intToTimeString(newTime));
     }
 
     return(
@@ -49,6 +66,40 @@ export default function Popup() {
             {
                 (gameId != '') ?
                 <Fragment>
+                    <div className="set-time-container">
+                        <button className='btn-secondary'
+                            onClick={async () => {shiftTimeBy(-15);}}
+                        >-15m</button>
+                        <button className='btn-secondary'
+                            onClick={async () => {shiftTimeBy(-30);}}
+                        >-30m</button>
+                        <button className='btn-secondary'
+                            onClick={async () => {shiftTimeBy(-60);}}
+                        >-1h</button>
+                        <button className='btn-secondary'
+                            onClick={async () => {shiftTimeBy(-120);}}
+                        >-2h</button>
+                        <button className='btn-secondary'
+                            onClick={async () => {shiftTimeBy(-24*60);}}
+                        >-1d</button>                        
+                    </div>
+                    <div className="set-time-container">
+                        <button className='btn-secondary'
+                            onClick={async () => {shiftTimeBy(15);}}
+                        >15m</button>
+                        <button className='btn-secondary'
+                            onClick={async () => {shiftTimeBy(30);}}
+                        >30m</button>
+                        <button className='btn-secondary'
+                            onClick={async () => {shiftTimeBy(60);}}
+                        >1h</button>
+                        <button className='btn-secondary'
+                            onClick={async () => {shiftTimeBy(120);}}
+                        >2h</button>
+                        <button className='btn-secondary'
+                            onClick={async () => {shiftTimeBy(24*60);}}
+                        >1d</button>                        
+                    </div>
                     <div className="set-time-container">
                         <button className='btn-primary'
                             onClick={async () => {

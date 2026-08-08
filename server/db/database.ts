@@ -7,6 +7,16 @@ export const db = drizzle(client);
 export const clients = new Set<WebSocket>();
 
 export function intToTimeString(time: number) {
+    if (time > 24*60) {
+        while (time >= 24*60) {
+            time -= 24*60;
+        }
+    } else if (time < 0) {
+        while (time < 0) {
+            time = 24*60 - time;
+        }
+    }
+
     const hour = Math.floor(time/60);
     const min = time - hour*60;
 

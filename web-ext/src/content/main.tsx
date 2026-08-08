@@ -61,7 +61,6 @@ async function load(sendResponse: (response: any) => void) {
     sendResponse({ gameId: gameId });
 
     //-------------------------- CONNECT TO WS --------------------------
-    /*
     if (socket) {
         socket.close();
     }
@@ -90,7 +89,6 @@ async function load(sendResponse: (response: any) => void) {
 
     ChatBoxObserver.disconnect();
     ChatBoxObserver.observe(chatBox, { childList: true, subtree: true });
-    */
 
     activeNotif = document.createElement('div');
     activeNotif.id = 'roll20ActiveNotif';
@@ -168,7 +166,7 @@ async function messageNexus(author: string, text: string, msgId: string) {
 
             chatInput.value = "/desc Pong!";
             chatBtn.click();
-        } if (text.toLowerCase() == '#hello') {
+        } else if (text.toLowerCase() == '#hello') {
             processedMsgId.push(msgId);
             if (processedMsgId.length > 100) {
                 processedMsgId.shift();
@@ -180,7 +178,19 @@ async function messageNexus(author: string, text: string, msgId: string) {
                     data: author
                 }));
             }
-        }
+        } else if (text.toLowerCase() == '#time') {
+            processedMsgId.push(msgId);
+            if (processedMsgId.length > 100) {
+                processedMsgId.shift();
+            }
+            
+            if (socket) {
+                socket.send(JSON.stringify({
+                    flag: 'TIME-NOW',
+                    data: author
+                }));
+            }
+        } 
     }    
 }
 
