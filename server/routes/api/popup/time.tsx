@@ -1,7 +1,7 @@
 import { clients, db, intToTimeString } from "@/db/database.ts";
 import { define } from "../../../utils.ts";
-import { game } from "@/db/schema.ts";
-import { eq } from "drizzle-orm";
+import { effect, game, item } from "@/db/schema.ts";
+import { and, eq, gt, lte } from "drizzle-orm";
 
 export const handler = define.handlers({
     async GET(ctx) {
@@ -58,7 +58,8 @@ export const handler = define.handlers({
                     .where(eq(game.gameId, payload.gameId))
                     .limit(1);
 
-                const timeNew = ((result.length > 0) ? result[0].time : 0) + payload.value;
+                const timeOld = ((result.length > 0) ? result[0].time : 0);
+                const timeNew = timeOld + payload.value;
                 await db.insert(game)
                     .values({ gameId: payload.gameId, time: timeNew })
                     .onConflictDoUpdate({
@@ -68,10 +69,47 @@ export const handler = define.handlers({
                         }
                     });
 
+                const expireList: string[] = [];
+                
+                const expiredEffects = await db.select({desc: effect.desc})
+                    .from(effect)
+                    .where(
+                        and(
+                            eq(effect.gameId, payload.gameId),
+                            lte(effect.start, timeOld),
+                            gt(effect.expire, timeOld),
+                            lte(effect.expire, timeNew)
+                        )
+                    )
+                for (const expiredEffect of expiredEffects) {
+                    expireList.push(expiredEffect.desc ?? '');
+                }
+
+                const expiredItems = await db.select({desc: item.desc, qty: item.qty})
+                    .from(item)
+                    .where(
+                        and(
+                            eq(item.gameId, payload.gameId),
+                            lte(item.start, timeOld),
+                            gt(item.expire, timeOld),
+                            lte(item.expire, timeNew)
+                        )
+                    )
+                const expiredItemGroup: {[key: string]: number} = {};
+                for (const loot of expiredItems) {
+                    expiredItemGroup[loot.desc ?? 'UNDEFINED'] = (expiredItemGroup[loot.desc ?? 'UNDEFINED'] ?? 0) + loot.qty;
+                }
+                Object.entries(expiredItemGroup).forEach(([name, qty]) => {
+                    expireList.push(qty.toString() + ' ' + name);
+                });
+
                 for (const socket of clients) {
                     socket.send(JSON.stringify({
-                        flag: "TEXT-MSG",
-                        data: "TIME: " + intToTimeString(timeNew)
+                        flag: "TEXT-LIST",
+                        data: [
+                            "TIME: " + intToTimeString(timeNew),
+                            ...expireList.map(e => 'EXPIRED: ' + e)
+                        ]
                     }));
                 }
                 break;

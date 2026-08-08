@@ -95,7 +95,7 @@ async function load(sendResponse: (response: any) => void) {
     activeNotif.classList.add('pustaka-notif');
     activeNotif.textContent = "🟢 PUSTAKA";
 
-    chatBtn.parentElement?.appendChild(activeNotif)
+    chatBtn.parentElement?.appendChild(activeNotif);
 }
 
 function startHeartbeat() {
@@ -118,7 +118,7 @@ async function chatBoxChange(mutationList: MutationRecord[], _observer: Mutation
             mutation.addedNodes.forEach((node: Node) => {
                 if (node.nodeType === Node.ELEMENT_NODE) {
                     const nodeEle = node as HTMLElement;
-                    if (nodeEle.classList.contains('message') && !nodeEle.classList.contains('system')) {
+                    if (nodeEle.classList.contains('message') && !nodeEle.classList.contains('system') && !nodeEle.classList.contains('desc')) {
                         const byEle = nodeEle.querySelector('span.by') as HTMLSpanElement;
                         if (byEle) {
                             messageNexus(
@@ -131,7 +131,7 @@ async function chatBoxChange(mutationList: MutationRecord[], _observer: Mutation
                             let prevNode = nodeEle.previousElementSibling;
 
                             while ((author == '') && (prevNode)) {
-                                if (nodeEle.classList.contains('message') && !nodeEle.classList.contains('system')) {
+                                if (nodeEle.classList.contains('message') && !nodeEle.classList.contains('system') && !nodeEle.classList.contains('desc')) {
                                     const byEle = prevNode.querySelector('span.by') as HTMLSpanElement;
                                     if (byEle) {
                                         messageNexus(
@@ -190,7 +190,124 @@ async function messageNexus(author: string, text: string, msgId: string) {
                     data: author
                 }));
             }
-        } 
+        } else if (text.toLowerCase() == '#effect') {
+            processedMsgId.push(msgId);
+            if (processedMsgId.length > 100) {
+                processedMsgId.shift();
+            }
+            
+            if (socket) {
+                socket.send(JSON.stringify({
+                    flag: 'EFFECT-NOW',
+                    data: author
+                }));
+            }
+        } else if (text.startsWith('#add-effect')) {
+            processedMsgId.push(msgId);
+            if (processedMsgId.length > 100) {
+                processedMsgId.shift();
+            }
+
+            const payload = text.split(' ');
+            if (payload.length <= 2 ) {
+                chatInput.value = "/desc #add-effect {expire in mins} {description}";
+                chatBtn.click();
+            } else if (!(/^\d+$/).test(payload[1])) {
+                chatInput.value = "/desc #add-effect {expire in mins} {description}";
+                chatBtn.click();
+            } else {
+                if (socket) {
+                    socket.send(JSON.stringify({
+                        flag: 'EFFECT-ADD',
+                        data: {
+                            expire: Number(payload[1]),
+                            desc: payload.slice(2).join(' ').trim()
+                        }
+                    }));
+                }
+            }
+        } else if (text.startsWith('#remove-current-effect')) {
+            processedMsgId.push(msgId);
+            if (processedMsgId.length > 100) {
+                processedMsgId.shift();
+            }
+
+            const payload = text.split(' ');
+            if (payload.length <= 1 ) {
+                chatInput.value = "/desc #remove-current-effect {description}";
+                chatBtn.click();
+            } else {
+                if (socket) {
+                socket.send(JSON.stringify({
+                    flag: 'EFFECT-REMOVE-CURRENT',
+                    data: payload.slice(1).join(' ').trim()
+                }));
+            }
+            }
+        } else if (text.toLowerCase() == '#loot') {
+            processedMsgId.push(msgId);
+            if (processedMsgId.length > 100) {
+                processedMsgId.shift();
+            }
+            
+            if (socket) {
+                socket.send(JSON.stringify({
+                    flag: 'LOOT-NOW',
+                    data: author
+                }));
+            }
+        } else if (text.startsWith('#add-loot')) {
+            processedMsgId.push(msgId);
+            if (processedMsgId.length > 100) {
+                processedMsgId.shift();
+            }
+
+            const payload = text.split(' ');
+            if (payload.length <= 3 ) {
+                chatInput.value = "/desc #add-loot {expire in mins} {qty} {description}";
+                chatBtn.click();
+            } else if ((!(/^\d+$/).test(payload[1])) || (!(/^\d+$/).test(payload[2]))) {
+                chatInput.value = "/desc #add-loot {expire in mins} {qty} {description}";
+                chatBtn.click();
+            } else {
+                if (socket) {
+                    socket.send(JSON.stringify({
+                        flag: 'LOOT-ADD',
+                        data: {
+                            expire: Number(payload[1]),
+                            qty: Number(payload[2]),
+                            desc: payload.slice(3).join(' ').trim()
+                        }
+                    }));
+                }
+            }
+        } else if (text.startsWith('#remove-loot')) {
+            processedMsgId.push(msgId);
+            if (processedMsgId.length > 100) {
+                processedMsgId.shift();
+            }
+
+            const payload = text.split(' ');
+            if (payload.length <= 2 ) {
+                chatInput.value = "/desc #remove-loot {qty} {description}";
+                chatBtn.click();
+            } else if (!(/^\d+$/).test(payload[1])) {
+                chatInput.value = "/desc #remove-loot {qty} {description}";
+                chatBtn.click();
+            } else {
+                if (socket) {
+                    if (socket) {
+                        socket.send(JSON.stringify({
+                            flag: 'LOOT-REMOVE',
+                            data: {
+                                qty: Number(payload[1]),
+                                desc: payload.slice(2).join(' ').trim()
+                            }
+                        }));
+                    }
+                }
+            }
+        }
     }    
 }
 
