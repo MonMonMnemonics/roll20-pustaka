@@ -1,6 +1,6 @@
 import { clients, db, intToTimeString } from "@/db/database.ts";
 import { define } from "../../../utils.ts";
-import { effect, game, item } from "@/db/schema.ts";
+import { effect, game } from "@/db/schema.ts";
 import { and, eq, gt, lte } from "drizzle-orm";
 
 export const handler = define.handlers({
@@ -84,24 +84,6 @@ export const handler = define.handlers({
                 for (const expiredEffect of expiredEffects) {
                     expireList.push(expiredEffect.desc ?? '');
                 }
-
-                const expiredItems = await db.select({desc: item.desc, qty: item.qty})
-                    .from(item)
-                    .where(
-                        and(
-                            eq(item.gameId, payload.gameId),
-                            lte(item.start, timeOld),
-                            gt(item.expire, timeOld),
-                            lte(item.expire, timeNew)
-                        )
-                    )
-                const expiredItemGroup: {[key: string]: number} = {};
-                for (const loot of expiredItems) {
-                    expiredItemGroup[loot.desc ?? 'UNDEFINED'] = (expiredItemGroup[loot.desc ?? 'UNDEFINED'] ?? 0) + loot.qty;
-                }
-                Object.entries(expiredItemGroup).forEach(([name, qty]) => {
-                    expireList.push(qty.toString() + ' ' + name);
-                });
 
                 for (const socket of clients) {
                     socket.send(JSON.stringify({

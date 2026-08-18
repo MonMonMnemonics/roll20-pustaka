@@ -263,20 +263,16 @@ async function messageNexus(author: string, text: string, msgId: string) {
             }
 
             const payload = text.split(' ');
-            if (payload.length <= 3 ) {
-                chatInput.value = "/desc #add-loot {expire in mins} {qty} {description}";
-                chatBtn.click();
-            } else if ((!(/^\d+$/).test(payload[1])) || (!(/^\d+$/).test(payload[2]))) {
-                chatInput.value = "/desc #add-loot {expire in mins} {qty} {description}";
+            if (payload.length <= 2 ) {
+                chatInput.value = "/desc #add-loot {qty} {description}";
                 chatBtn.click();
             } else {
                 if (socket) {
                     socket.send(JSON.stringify({
                         flag: 'LOOT-ADD',
                         data: {
-                            expire: Number(payload[1]),
-                            qty: Number(payload[2]),
-                            desc: payload.slice(3).join(' ').trim()
+                            qty: Number(payload[1]),
+                            desc: payload.slice(2).join(' ').trim()
                         }
                     }));
                 }

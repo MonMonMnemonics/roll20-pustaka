@@ -152,7 +152,6 @@ async function messageNexus(flag: string, data: any, gameId:string, socket: WebS
                     and(
                         eq(item.gameId, gameId),
                         lte(item.start, timeNow),
-                        gt(item.expire, timeNow)
                     )
                 )
 
@@ -183,7 +182,6 @@ async function messageNexus(flag: string, data: any, gameId:string, socket: WebS
                 gameId: gameId,
                 start: timeNow,
                 qty: data.qty,
-                expire: timeNow + data.expire,
                 desc: data.desc
             });
 
@@ -209,10 +207,9 @@ async function messageNexus(flag: string, data: any, gameId:string, socket: WebS
                         eq(item.gameId, gameId),
                         eq(item.desc, data.desc),
                         lte(item.start, timeNow),
-                        gt(item.expire, timeNow)
                     )
                 )
-                .orderBy(asc(item.expire));
+                .orderBy(asc(item.start));
 
             if (data.qty > target.reduce((acc, curr) => acc + curr.qty, 0)) {
                 socket.send(JSON.stringify({
