@@ -1,0 +1,1637 @@
+[
+  {
+    "name": "Aboleth",
+    "size": "large",
+    "creatureType": "aberration"
+  },
+  {
+    "name": "Acolyte",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Adult Black Dragon",
+    "size": "huge",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Adult Blue Dragon",
+    "size": "huge",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Adult Brass Dragon",
+    "size": "huge",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Adult Bronze Dragon",
+    "size": "huge",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Adult Copper Dragon",
+    "size": "huge",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Adult Gold Dragon",
+    "size": "huge",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Adult Green Dragon",
+    "size": "huge",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Adult Red Dragon",
+    "size": "huge",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Adult Silver Dragon",
+    "size": "huge",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Adult White Dragon",
+    "size": "huge",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Air Elemental",
+    "size": "large",
+    "creatureType": "elemental"
+  },
+  {
+    "name": "Allosaurus",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Ancient Black Dragon",
+    "size": "gargantuan",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Ancient Blue Dragon",
+    "size": "gargantuan",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Ancient Brass Dragon",
+    "size": "gargantuan",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Ancient Bronze Dragon",
+    "size": "gargantuan",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Ancient Copper Dragon",
+    "size": "gargantuan",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Ancient Gold Dragon",
+    "size": "gargantuan",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Ancient Green Dragon",
+    "size": "gargantuan",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Ancient Red Dragon",
+    "size": "gargantuan",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Ancient Silver Dragon",
+    "size": "gargantuan",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Ancient White Dragon",
+    "size": "gargantuan",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Androsphinx",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Animated Armor",
+    "size": "medium",
+    "creatureType": "construct"
+  },
+  {
+    "name": "Ankheg",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Ankylosaurus",
+    "size": "huge",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Ape",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Archmage",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Assassin",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Awakened Shrub",
+    "size": "small",
+    "creatureType": "plant"
+  },
+  {
+    "name": "Awakened Tree",
+    "size": "huge",
+    "creatureType": "plant"
+  },
+  {
+    "name": "Axe Beak",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Azer",
+    "size": "medium",
+    "creatureType": "elemental"
+  },
+  {
+    "name": "Baboon",
+    "size": "small",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Badger",
+    "size": "tiny",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Balor",
+    "size": "huge",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Bandit",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Bandit Captain",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Banshee",
+    "size": "medium",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Barbed Devil",
+    "size": "medium",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Basilisk",
+    "size": "medium",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Bat",
+    "size": "tiny",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Bearded Devil",
+    "size": "medium",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Behir",
+    "size": "huge",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Berserker",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Black Bear",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Black Dragon Wyrmling",
+    "size": "medium",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Black Pudding",
+    "size": "large",
+    "creatureType": "ooze"
+  },
+  {
+    "name": "Blink Dog",
+    "size": "medium",
+    "creatureType": "fey"
+  },
+  {
+    "name": "Blood Hawk",
+    "size": "small",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Blue Dragon Wyrmling",
+    "size": "medium",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Boar",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Bone Devil",
+    "size": "large",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Brass Dragon Wyrmling",
+    "size": "medium",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Bronze Dragon Wyrmling",
+    "size": "medium",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Brown Bear",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Bugbear",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Bulette",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Camel",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Cat",
+    "size": "tiny",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Centaur",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Chain Devil",
+    "size": "medium",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Chimera",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Chuul",
+    "size": "large",
+    "creatureType": "aberration"
+  },
+  {
+    "name": "Clay Golem",
+    "size": "large",
+    "creatureType": "construct"
+  },
+  {
+    "name": "Cloaker",
+    "size": "large",
+    "creatureType": "aberration"
+  },
+  {
+    "name": "Cloud Giant",
+    "size": "huge",
+    "creatureType": "giant"
+  },
+  {
+    "name": "Cockatrice",
+    "size": "small",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Commoner",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Constrictor Snake",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Copper Dragon Wyrmling",
+    "size": "medium",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Couatl",
+    "size": "medium",
+    "creatureType": "celestial"
+  },
+  {
+    "name": "Crab",
+    "size": "tiny",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Crocodile",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Cult Fanatic",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Cultist",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Cyclops",
+    "size": "huge",
+    "creatureType": "giant"
+  },
+  {
+    "name": "Darkmantle",
+    "size": "small",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Death Dog",
+    "size": "medium",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Deep Gnome (Svirfneblin)",
+    "size": "small",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Deer",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Deva",
+    "size": "medium",
+    "creatureType": "celestial"
+  },
+  {
+    "name": "Dire Wolf",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Djinni",
+    "size": "large",
+    "creatureType": "elemental"
+  },
+  {
+    "name": "Doppelganger",
+    "size": "medium",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Draft Horse",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Dragon Turtle",
+    "size": "gargantuan",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Dretch",
+    "size": "small",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Drider",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Drow",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Druid",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Dryad",
+    "size": "medium",
+    "creatureType": "fey"
+  },
+  {
+    "name": "Duergar",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Dust Mephit",
+    "size": "small",
+    "creatureType": "elemental"
+  },
+  {
+    "name": "Eagle",
+    "size": "small",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Earth Elemental",
+    "size": "large",
+    "creatureType": "elemental"
+  },
+  {
+    "name": "Efreeti",
+    "size": "large",
+    "creatureType": "elemental"
+  },
+  {
+    "name": "Elephant",
+    "size": "huge",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Elk",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Erinyes",
+    "size": "medium",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Ettercap",
+    "size": "medium",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Ettin",
+    "size": "large",
+    "creatureType": "giant"
+  },
+  {
+    "name": "Fire Elemental",
+    "size": "large",
+    "creatureType": "elemental"
+  },
+  {
+    "name": "Fire Giant",
+    "size": "huge",
+    "creatureType": "giant"
+  },
+  {
+    "name": "Flameskull",
+    "size": "tiny",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Flesh Golem",
+    "size": "medium",
+    "creatureType": "construct"
+  },
+  {
+    "name": "Flying Snake",
+    "size": "tiny",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Flying Sword",
+    "size": "small",
+    "creatureType": "construct"
+  },
+  {
+    "name": "Frog",
+    "size": "tiny",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Frost Giant",
+    "size": "huge",
+    "creatureType": "giant"
+  },
+  {
+    "name": "Gargoyle",
+    "size": "medium",
+    "creatureType": "elemental"
+  },
+  {
+    "name": "Gelatinous Cube",
+    "size": "large",
+    "creatureType": "ooze"
+  },
+  {
+    "name": "Ghast",
+    "size": "medium",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Ghost",
+    "size": "medium",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Ghoul",
+    "size": "medium",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Giant Ape",
+    "size": "huge",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Badger",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Bat",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Boar",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Centipede",
+    "size": "small",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Constrictor Snake",
+    "size": "huge",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Crab",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Crocodile",
+    "size": "huge",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Eagle",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Elk",
+    "size": "huge",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Fire Beetle",
+    "size": "small",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Frog",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Goat",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Hyena",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Lizard",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Octopus",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Owl",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Poisonous Snake",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Rat",
+    "size": "small",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Scorpion",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Sea Horse",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Shark",
+    "size": "huge",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Spider",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Toad",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Vulture",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Wasp",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Weasel",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Giant Wolf Spider",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Gibbering Mouther",
+    "size": "medium",
+    "creatureType": "aberration"
+  },
+  {
+    "name": "Glabrezu",
+    "size": "large",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Gladiator",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Gnoll",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Goat",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Goblin",
+    "size": "small",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Gold Dragon Wyrmling",
+    "size": "medium",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Gorgon",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Gray Ooze",
+    "size": "medium",
+    "creatureType": "ooze"
+  },
+  {
+    "name": "Green Dragon Wyrmling",
+    "size": "medium",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Green Hag",
+    "size": "medium",
+    "creatureType": "fey"
+  },
+  {
+    "name": "Grick",
+    "size": "medium",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Griffon",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Grimlock",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Guard",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Guardian Naga",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Gynosphinx",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Half-Red Dragon Veteran",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Harpy",
+    "size": "medium",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Hawk",
+    "size": "tiny",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Hell Hound",
+    "size": "medium",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Hezrou",
+    "size": "large",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Hill Giant",
+    "size": "huge",
+    "creatureType": "giant"
+  },
+  {
+    "name": "Hippogriff",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Hobgoblin",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Homunculus",
+    "size": "tiny",
+    "creatureType": "construct"
+  },
+  {
+    "name": "Horned Devil",
+    "size": "large",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Hunter Shark",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Hydra",
+    "size": "huge",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Hyena",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Ice Devil",
+    "size": "large",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Ice Mephit",
+    "size": "small",
+    "creatureType": "elemental"
+  },
+  {
+    "name": "Imp",
+    "size": "tiny",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Invisible Stalker",
+    "size": "medium",
+    "creatureType": "elemental"
+  },
+  {
+    "name": "Iron Golem",
+    "size": "large",
+    "creatureType": "construct"
+  },
+  {
+    "name": "Jackal",
+    "size": "small",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Killer Whale",
+    "size": "huge",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Knight",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Kobold",
+    "size": "small",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Kraken",
+    "size": "gargantuan",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Lamia",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Lemure",
+    "size": "medium",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Lich",
+    "size": "medium",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Lion",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Lizard",
+    "size": "tiny",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Lizardfolk",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Mage",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Magma Mephit",
+    "size": "small",
+    "creatureType": "elemental"
+  },
+  {
+    "name": "Magmin",
+    "size": "small",
+    "creatureType": "elemental"
+  },
+  {
+    "name": "Mammoth",
+    "size": "huge",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Manticore",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Marilith",
+    "size": "large",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Mastiff",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Medusa",
+    "size": "medium",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Merfolk",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Merrow",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Mimic",
+    "size": "medium",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Minotaur",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Minotaur Skeleton",
+    "size": "large",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Mule",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Mummy",
+    "size": "medium",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Mummy Lord",
+    "size": "medium",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Nalfeshnee",
+    "size": "large",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Night Hag",
+    "size": "medium",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Nightmare",
+    "size": "large",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Noble",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Nothic",
+    "size": "medium",
+    "creatureType": "aberration"
+  },
+  {
+    "name": "Ochre Jelly",
+    "size": "large",
+    "creatureType": "ooze"
+  },
+  {
+    "name": "Octopus",
+    "size": "small",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Ogre",
+    "size": "large",
+    "creatureType": "giant"
+  },
+  {
+    "name": "Ogre Zombie",
+    "size": "large",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Oni",
+    "size": "large",
+    "creatureType": "giant"
+  },
+  {
+    "name": "Orc",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Otyugh",
+    "size": "large",
+    "creatureType": "aberration"
+  },
+  {
+    "name": "Owl",
+    "size": "tiny",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Owlbear",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Panther",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Pegasus",
+    "size": "large",
+    "creatureType": "celestial"
+  },
+  {
+    "name": "Phase Spider",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Pit Fiend",
+    "size": "large",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Planetar",
+    "size": "large",
+    "creatureType": "celestial"
+  },
+  {
+    "name": "Plesiosaurus",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Poisonous Snake",
+    "size": "tiny",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Polar Bear",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Pony",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Priest",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Pseudodragon",
+    "size": "tiny",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Pteranodon",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Purple Worm",
+    "size": "gargantuan",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Quasit",
+    "size": "tiny",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Quipper",
+    "size": "tiny",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Rakshasa",
+    "size": "medium",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Rat",
+    "size": "tiny",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Raven",
+    "size": "tiny",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Red Dragon Wyrmling",
+    "size": "medium",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Reef Shark",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Remorhaz",
+    "size": "huge",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Rhinoceros",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Riding Horse",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Roc",
+    "size": "gargantuan",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Roper",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Rug of Smothering",
+    "size": "large",
+    "creatureType": "construct"
+  },
+  {
+    "name": "Rust Monster",
+    "size": "medium",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Saber-Toothed Tiger",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Sahuagin",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Salamander",
+    "size": "large",
+    "creatureType": "elemental"
+  },
+  {
+    "name": "Satyr",
+    "size": "medium",
+    "creatureType": "fey"
+  },
+  {
+    "name": "Scorpion",
+    "size": "tiny",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Scout",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Sea Hag",
+    "size": "medium",
+    "creatureType": "fey"
+  },
+  {
+    "name": "Sea Horse",
+    "size": "tiny",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Shadow",
+    "size": "medium",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Shambling Mound",
+    "size": "large",
+    "creatureType": "plant"
+  },
+  {
+    "name": "Shield Guardian",
+    "size": "large",
+    "creatureType": "construct"
+  },
+  {
+    "name": "Shrieker",
+    "size": "medium",
+    "creatureType": "plant"
+  },
+  {
+    "name": "Silver Dragon Wyrmling",
+    "size": "medium",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Skeleton",
+    "size": "medium",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Solar",
+    "size": "large",
+    "creatureType": "celestial"
+  },
+  {
+    "name": "Spectator",
+    "size": "medium",
+    "creatureType": "aberration"
+  },
+  {
+    "name": "Specter",
+    "size": "medium",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Spider",
+    "size": "tiny",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Spirit Naga",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Sprite",
+    "size": "tiny",
+    "creatureType": "fey"
+  },
+  {
+    "name": "Spy",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Steam Mephit",
+    "size": "small",
+    "creatureType": "elemental"
+  },
+  {
+    "name": "Stirge",
+    "size": "tiny",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Stone Giant",
+    "size": "huge",
+    "creatureType": "giant"
+  },
+  {
+    "name": "Stone Golem",
+    "size": "large",
+    "creatureType": "construct"
+  },
+  {
+    "name": "Storm Giant",
+    "size": "huge",
+    "creatureType": "giant"
+  },
+  {
+    "name": "Succubus/Incubus",
+    "size": "medium",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Swarm of Bats",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Swarm of Insects",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Swarm of Poisonous Snakes",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Swarm of Quippers",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Swarm of Rats",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Swarm of Ravens",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Tarrasque",
+    "size": "gargantuan",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Thug",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Tiger",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Treant",
+    "size": "huge",
+    "creatureType": "plant"
+  },
+  {
+    "name": "Tribal Warrior",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Triceratops",
+    "size": "huge",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Troll",
+    "size": "large",
+    "creatureType": "giant"
+  },
+  {
+    "name": "Twig Blight",
+    "size": "small",
+    "creatureType": "plant"
+  },
+  {
+    "name": "Tyrannosaurus Rex",
+    "size": "huge",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Unicorn",
+    "size": "large",
+    "creatureType": "celestial"
+  },
+  {
+    "name": "Vampire",
+    "size": "medium",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Vampire Spawn",
+    "size": "medium",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Veteran",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Violet Fungus",
+    "size": "medium",
+    "creatureType": "plant"
+  },
+  {
+    "name": "Vrock",
+    "size": "large",
+    "creatureType": "fiend"
+  },
+  {
+    "name": "Vulture",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Warhorse",
+    "size": "large",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Warhorse Skeleton",
+    "size": "large",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Water Elemental",
+    "size": "large",
+    "creatureType": "elemental"
+  },
+  {
+    "name": "Weasel",
+    "size": "tiny",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Werebear",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Wereboar",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Wererat",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Weretiger",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "Werewolf",
+    "size": "medium",
+    "creatureType": "humanoid"
+  },
+  {
+    "name": "White Dragon Wyrmling",
+    "size": "medium",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Wight",
+    "size": "medium",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Will-o'-Wisp",
+    "size": "tiny",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Winter Wolf",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Wolf",
+    "size": "medium",
+    "creatureType": "beast"
+  },
+  {
+    "name": "Worg",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Wraith",
+    "size": "medium",
+    "creatureType": "undead"
+  },
+  {
+    "name": "Wyvern",
+    "size": "large",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Xorn",
+    "size": "medium",
+    "creatureType": "elemental"
+  },
+  {
+    "name": "Yeti",
+    "size": "large",
+    "creatureType": "monstrosity"
+  },
+  {
+    "name": "Young Black Dragon",
+    "size": "large",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Young Blue Dragon",
+    "size": "large",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Young Brass Dragon",
+    "size": "large",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Young Bronze Dragon",
+    "size": "large",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Young Copper Dragon",
+    "size": "large",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Young Gold Dragon",
+    "size": "large",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Young Green Dragon",
+    "size": "large",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Young Red Dragon",
+    "size": "large",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Young Silver Dragon",
+    "size": "large",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Young White Dragon",
+    "size": "large",
+    "creatureType": "dragon"
+  },
+  {
+    "name": "Zombie",
+    "size": "medium",
+    "creatureType": "undead"
+  }
+]
