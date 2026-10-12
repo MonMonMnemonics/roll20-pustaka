@@ -2,11 +2,6 @@
 """
 Extract text from an image-based (scanned) PDF that has a 2-column layout.
 
-Each page is rendered to an image, split down the middle into a left and
-right column, OCR'd separately (so text doesn't get jumbled across the
-column gap), and then reassembled in reading order: page 1 left column,
-page 1 right column, page 2 left column, etc.
-
 Requirements:
     pip install pdf2image pytesseract pillow --break-system-packages
 
@@ -33,17 +28,12 @@ from pdf2image import convert_from_path
 from PIL import Image
 import pytesseract
 
+# REPLACE YOUR TESSERACT AND POPPLER HERE
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 POPPLER_PATH = r"C:\Program Files\poppler-26.02.0\Library\bin"
 
 def split_columns(image: Image.Image, split_ratio: float, gutter: int):
-    """Split a page image into left and right column images.
-
-    split_ratio: fraction of the width where the column boundary sits
-                 (0.5 = exact middle; tweak if your columns aren't equal width).
-    gutter: pixels to trim from each side of the boundary, to avoid
-            grabbing stray text/rules from the neighboring column.
-    """
+    #Split a page image into left and right column images.
     width, height = image.size
     mid = int(width * split_ratio)
 

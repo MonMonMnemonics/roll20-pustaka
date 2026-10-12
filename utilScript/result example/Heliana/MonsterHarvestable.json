@@ -1,0 +1,1324 @@
+{
+  "aberration": {
+    "skill": "Arcana",
+    "loot": [
+      {
+        "name": "Antenna",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Eye",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Flesh",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Phial of blood",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Bone",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Egg",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Fat",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of claws",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of teeth",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Tentacle",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Heart",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Liver",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Phial of mucus",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Stinger",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Brain",
+        "dc": 20,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Chitin",
+        "dc": 20,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Hide",
+        "dc": 20,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Main eye",
+        "dc": 20,
+        "edible": false,
+        "volatility": true
+      }
+    ]
+  },
+  "beast": {
+    "skill": "Survival",
+    "loot": [
+      {
+        "name": "Antenna",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Eye",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Hair",
+        "dc": 5,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Flesh",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Phial of blood",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Antler",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Beak",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Bone",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Egg",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Fat",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Fin",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Horn",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pincer",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of claws",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of teeth",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Talon",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Tusk",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Heart",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Liver",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Poison gland",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of feathers",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of scales",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Stinger",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Tentacle",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Chitin",
+        "dc": 20,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pelt",
+        "dc": 20,
+        "edible": false,
+        "volatility": false
+      }
+    ]
+  },
+  "celestial": {
+    "skill": "Religion",
+    "loot": [
+      {
+        "name": "Eye",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Flesh",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Hair",
+        "dc": 5,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Phial of blood",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of dust",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Bone",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Fat",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Horn",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of teeth",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Heart",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Liver",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of feathers",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of scales",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Brain",
+        "dc": 20,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Skin",
+        "dc": 20,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Soul",
+        "dc": 25,
+        "edible": false,
+        "volatility": true
+      }
+    ],
+    "extra": "Extraplanar Recall. As the bodies of celestials disintegrate upon death, shunting their souls back to their home plane, only pouches of dust can be harvested if the creature is killed anywhere other than its home plane or in a magic circle."
+  },
+  "construct": {
+    "skill": "Investigaion",
+    "loot": [
+      {
+        "name": "Phial of blood",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Phial of oil",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Flesh",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Plating",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Stone",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Bone",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Gears",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Heart",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Liver",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Brain",
+        "dc": 20,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Instructions",
+        "dc": 20,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Lifespark",
+        "dc": 25,
+        "edible": false,
+        "volatility": true
+      }
+    ]
+  },
+  "dragon": {
+    "skill": "Survival",
+    "loot": [
+      {
+        "name": "Eye",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Flesh",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Phial of blood",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Bone",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Egg",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Fat",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of claws",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of teeth",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Horn",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Liver",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of scales",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Heart",
+        "dc": 20,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Breath sac",
+        "dc": 25,
+        "edible": false,
+        "volatility": true
+      }
+    ]
+  },
+  "elemental": {
+    "skill": "Arcana",
+    "loot": [
+      {
+        "name": "Eye",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Primordial dust",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Bone",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Volatile mote of air/earth/fire/water",
+        "dc": 15,
+        "edible": false,
+        "volatility": true
+      },
+      {
+        "name": "Core of air/earth/fire/water",
+        "dc": 25,
+        "edible": false,
+        "volatility": true
+      }
+    ],
+    "extra": "Volatile Components: Elementals. If a character fails to harvest a volatile component, you can trigger one of the following events, the effects of which duplicate a spell but aren’t themselves spells. Use a save DC of 13 and 16 for the volatile mote and core, respectively. In all cases, only the harvesters are counted as being in the effect’s area, and all effects are instantaneous, ending immediately after triggering. Air elemental: the lightning bolt spell. Earth elemental: the depth charge spell. Fire elemental: the fireball spell. Water elemental: a wave of water with the effects of the wind wall spell."
+  },
+  "fey": {
+    "skill": "Arcana",
+    "loot": [
+      {
+        "name": "Antenna",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Eye",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Flesh",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Hair",
+        "dc": 5,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Phial of blood",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Antler",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Beak",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Bone",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Egg",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Horn",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of claws",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of teeth",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Talon",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Tusk",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Heart",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Fat",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Liver",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Poison gland",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of feathers",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of scales",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Tentacle",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Brain",
+        "dc": 20,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Pelt",
+        "dc": 20,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of dust",
+        "dc": 20,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Skin",
+        "dc": 20,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Psyche",
+        "dc": 25,
+        "edible": false,
+        "volatility": true
+      }
+    ],
+    "extra": "Volatile Component: Possession. If harvesters start but do not finish harvesting a psyche, the carving harvester must succeed on a DC 15 Charisma saving throw or become possessed by the fey’s psyche. The possessed creature is incapacitated and loses control of its body. The psyche now controls the body but doesn’t deprive the target of awareness. The psyche can’t be targeted by any attack, spell, or other effects, except ones that turn fey, and it retains its alignment and immunity to being charmed. It otherwise uses the possessed target’s statistics, but doesn’t gain access to the target’s knowledge, class features, or proficiencies. The possession lasts until the body drops to 0 hit points, the psyche ends it as a bonus action, or the psyche is turned or forced out by an effect like the dispel evil and good spell. When the possession ends, the psyche disappears into the ether."
+  },
+  "fiend": {
+    "skill": "Religion",
+    "loot": [
+      {
+        "name": "Eye",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Flesh",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Hair",
+        "dc": 5,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Phial of blood",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of dust",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Beak",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Bone",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Horn",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of claws",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of teeth",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Fat",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Heart",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Liver",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Poison gland",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of feathers",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of scales",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Brain",
+        "dc": 20,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Skin",
+        "dc": 20,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Soul",
+        "dc": 25,
+        "edible": false,
+        "volatility": true
+      }
+    ],
+    "extra": "Extraplanar Recall.As fiends’ bodies disintegrate upon death, shunting their souls back to their home plane, only pouches of dust can be harvested if the creature is killed anywhere other than on its home plane or in a magic circle."
+  },
+  "giant": {
+    "skill": "Medicine",
+    "loot": [
+      {
+        "name": "Flesh",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Hair",
+        "dc": 5,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Nail",
+        "dc": 5,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Phial of blood",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Bone",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Fat",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Tooth",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Heart",
+        "dc": 15,
+        "edible": true,
+        "volatility": true
+      },
+      {
+        "name": "Liver",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Skin",
+        "dc": 20,
+        "edible": false,
+        "volatility": false
+      }
+    ]
+  },
+  "humanoid": {
+    "skill": "Medicine",
+    "loot": [
+      {
+        "name": "Eye",
+        "dc": 5,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Phial of blood",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Bone",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Egg",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of teeth",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Heart",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Liver",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of feathers",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of scales",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Brain",
+        "dc": 20,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Skin",
+        "dc": 20,
+        "edible": false,
+        "volatility": false
+      }
+    ]
+  },
+  "monstrosity": {
+    "skill": "Survival",
+    "loot": [
+      {
+        "name": "Antenna",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Eye",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Flesh",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Hair",
+        "dc": 5,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Phial of blood",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Antler",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Beak",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Bone",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Egg",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Fat",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Fin",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Horn",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pincer",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of claws",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of teeth",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Talon",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Tusk",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Heart",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Liver",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Poison gland",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of feathers",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of scales",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Stinger",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Tentacle",
+        "dc": 15,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Chitin",
+        "dc": 20,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pelt",
+        "dc": 20,
+        "edible": false,
+        "volatility": false
+      }
+    ]
+  },
+  "ooze": {
+    "skill": "Nature",
+    "loot": [
+      {
+        "name": "Phial of acid",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Phial of mucus",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Vesicle",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Membrane",
+        "dc": 20,
+        "edible": false,
+        "volatility": false
+      }
+    ]
+  },
+  "plant": {
+    "skill": "Nature",
+    "loot": [
+      {
+        "name": "Phial of sap",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Tuber",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Bundle of roots",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Phial of wax",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of hyphae",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of leaves",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of seeds",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Poison gland",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of pollen",
+        "dc": 15,
+        "edible": true,
+        "volatility": true
+      },
+      {
+        "name": "Pouch of spores",
+        "dc": 15,
+        "edible": true,
+        "volatility": true
+      },
+      {
+        "name": "Bark",
+        "dc": 20,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Membrane",
+        "dc": 20,
+        "edible": true,
+        "volatility": false
+      }
+    ]
+  },
+  "undead": {
+    "skill": "Medicine",
+    "loot": [
+      {
+        "name": "Bone",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Eye",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Phial of congealed blood",
+        "dc": 5,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Marrow",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Pouch of teeth",
+        "dc": 10,
+        "edible": false,
+        "volatility": false
+      },
+      {
+        "name": "Rancid fat",
+        "dc": 10,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Ethereal ichor",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Undying flesh",
+        "dc": 15,
+        "edible": true,
+        "volatility": false
+      },
+      {
+        "name": "Undying heart",
+        "dc": 20,
+        "edible": true,
+        "volatility": true
+      }
+    ]
+  }
+}

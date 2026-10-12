@@ -6,7 +6,7 @@ import ollama
 from PIL import Image
 from pydantic import BaseModel, Field, RootModel
 
-POPPLER_PATH = r"C:\Program Files\poppler-26.02.0\Library\bin"
+POPPLER_PATH = r"C:\Program Files\poppler-26.02.0\Library\bin" # REPLACE YOUR TESSERACT AND POPPLER HERE
 
 # 1. Define schema
 class MonsterComponent(BaseModel):
@@ -18,9 +18,9 @@ class MonsterComponent(BaseModel):
 class DynamicLootTable(RootModel[Dict[str, List[MonsterComponent]]]):
     pass
 
-
+# Resizes and converts PIL image half to PNG bytes.
 def process_image_half(image: Image.Image, max_dimension: int = 1280) -> bytes:
-    """Resizes and converts PIL image half to PNG bytes."""
+    
     if max(image.size) > max_dimension:
         image.thumbnail((max_dimension, max_dimension), Image.Resampling.LANCZOS)
     
@@ -28,21 +28,18 @@ def process_image_half(image: Image.Image, max_dimension: int = 1280) -> bytes:
     image.save(buffer, format="PNG")
     return buffer.getvalue()
 
-
+# Splits a PIL image vertically into Left and Right halves.
 def split_page_into_columns(page: Image.Image) -> tuple[Image.Image, Image.Image]:
-    """Splits a PIL image vertically into Left and Right halves."""
     width, height = page.size
     mid_x = width // 2
 
-    # Crop boxes defined as (left, top, right, bottom)
     left_half = page.crop((0, 0, mid_x, height))
     right_half = page.crop((mid_x, 0, width, height))
 
     return left_half, right_half
 
-
+# Sends a single column image to Ollama and returns parsed dict.
 def parse_column_image(img_bytes: bytes, model_name: str = "qwen2.5vl:3b") -> dict:
-    """Sends a single column image to Ollama and returns parsed dict."""
     response = ollama.chat(
         model=model_name,
         messages=[
@@ -78,7 +75,6 @@ def parse_pdf_to_json(
     for idx, page in enumerate(pages):
         print(f"Processing Page {idx + 1}/{len(pages)}...")
         
-        # Split page vertically into 2 column images
         left_img, right_img = split_page_into_columns(page)
         columns = [("Left", left_img), ("Right", right_img)]
 
@@ -89,7 +85,6 @@ def parse_pdf_to_json(
             try:
                 page_data = parse_column_image(img_bytes, model_name)
                 
-                # Merge output items into combined result dict
                 for creature_type, items in page_data.items():
                     key = creature_type.lower().strip()
                     if key not in combined_result:
@@ -104,9 +99,8 @@ def parse_pdf_to_json(
 if __name__ == "__main__":
     PDF_FILE = "Heliana.pdf"  # Replace with your actual PDF path
 
-    extracted_data = parse_pdf_to_json(PDF_FILE)
+    extracted_data = parse_pdf_to_json(PDF_FILE, "qwen2.5vl:3b") # CHANGE YOUR OLLAMA MODEL
 
-    # Save output to disk
     with open("extracted_loot.json", "w", encoding="utf-8") as f:
         json.dump(extracted_data, f, indent=4)
 

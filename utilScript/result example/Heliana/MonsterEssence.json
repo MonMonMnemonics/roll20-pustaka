@@ -1,0 +1,32 @@
+[
+    {
+        "min": 3,
+        "max": 6,
+        "dc": 25,
+        "name": "Frail essence"
+    },
+    {
+        "min": 7,
+        "max": 11,
+        "dc": 30,
+        "name": "Robust essence"
+    },
+    {
+        "min": 12,
+        "max": 17,
+        "dc": 35,
+        "name": "Potent essence"
+    },
+    {
+        "min": 18,
+        "max": 24,
+        "dc": 40,
+        "name": "Mythic essence"
+    },
+    {
+        "min": 25,
+        "max": 1000,
+        "dc": 50,
+        "name": "Deific essence"
+    }
+]

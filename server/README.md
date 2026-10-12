@@ -15,3 +15,9 @@ deno task dev
 ```
 
 This will watch the project directory and restart as necessary.
+
+DB Migration:
+```bash
+deno task db:generate
+deno task db:migrate
+```
